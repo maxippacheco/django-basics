@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	{% extends 'layouts/base.html' %}
+	
+
+	{% load static %}
+	
+	{% block content %}
+		<h1>{{ title }}</h1>
+
+		<img src="{% static 'images.jpg' %}" alt="" width="70">
+
+		<p>
+			Lorem ipsum dolor sit amet consectetur, adipisi
+			cing elit. Fugit deserunt earum illum! Odio a necessitatibus iste officia, facere laboriosam perspiciatis alias in atque modi, minus blanditiis similique beatae odit aspernatur?
+		</p>
+	{% endblock %}
+</body>
+</html>
